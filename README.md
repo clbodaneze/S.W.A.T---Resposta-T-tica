@@ -19,7 +19,7 @@ FUNCIONALIDADES PRINCIPAIS
 ----------------------------------------------------
 * Táticas de Esquadrão: Implementação de comandos básicos para o esquadrão ("Breach & Clear", "Flash & Bang"). ** Em Desenvolvimento **
 * Sistema de Inimigos/Reféns: NPCs com IA que respondem a estímulos e se rendem ou reagem. ** Em Desenvolvimento **
-* Gerenciamento de Inventário: Seleção de equipamento tático (armas letais e não-letais, granadas). ** Em desenvolvimento **
+* Gerenciamento de Inventário: Seleção de equipamento tático (armas letais e não-letais, granadas). ** Em Desenvolvimento **
 * Sistema de Pontuação/Avaliação: Avalia o desempenho baseado na precisão dos tiros.
 
 ----------------------------------------------------
