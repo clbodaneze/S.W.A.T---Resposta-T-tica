@@ -1,0 +1,397 @@
+[gd_scene load_steps=8 format=3 uid="uid://cuxar6dinyt1p"]
+
+[ext_resource type="Script" path="res://scripts/world.gd" id="1_pcupu"]
+[ext_resource type="PackedScene" uid="uid://dtcrra7m2ni53" path="res://scenes/box.tscn" id="1_tsbrl"]
+[ext_resource type="PackedScene" uid="uid://ce43i43edb0sb" path="res://scenes/player.tscn" id="2_nhxle"]
+[ext_resource type="PackedScene" uid="uid://bmen0kmajg5bp" path="res://scenes/enemy.tscn" id="3_2wjus"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_5dro7"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_n304t"]
+bg_color = Color(0.211765, 0.211765, 0.211765, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3bs6i"]
+bg_color = Color(0, 0.694118, 0.137255, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[node name="World" type="Node2D"]
+script = ExtResource("1_pcupu")
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="."]
+modulate = Color(0.0901, 0.17, 0.104748, 1)
+position = Vector2(603, 424)
+scale = Vector2(5063.25, 3391.75)
+mesh = SubResource("QuadMesh_5dro7")
+metadata/_edit_lock_ = true
+
+[node name="Player" parent="." instance=ExtResource("2_nhxle")]
+position = Vector2(634, 340)
+
+[node name="Enemy" parent="." instance=ExtResource("3_2wjus")]
+position = Vector2(837, -120)
+
+[node name="Enemy2" parent="." instance=ExtResource("3_2wjus")]
+position = Vector2(589, -11)
+
+[node name="Enemy3" parent="." instance=ExtResource("3_2wjus")]
+position = Vector2(-819, -802)
+rotation = 0.71733
+
+[node name="Enemy4" parent="." instance=ExtResource("3_2wjus")]
+position = Vector2(-792, 419)
+rotation = 0.837758
+
+[node name="Enemy5" parent="." instance=ExtResource("3_2wjus")]
+position = Vector2(1159, 407)
+rotation = -4.66701
+
+[node name="Enemy6" parent="." instance=ExtResource("3_2wjus")]
+position = Vector2(1010, -439)
+rotation = 1.05592
+
+[node name="Enemy7" parent="." instance=ExtResource("3_2wjus")]
+position = Vector2(-342, -304)
+rotation = 1.54462
+
+[node name="Enemy8" parent="." instance=ExtResource("3_2wjus")]
+position = Vector2(-59, 423)
+rotation = 1.13446
+
+[node name="MainCamera" type="Camera2D" parent="."]
+
+[node name="Box21" parent="." instance=ExtResource("1_tsbrl")]
+position = Vector2(119, 279)
+
+[node name="Box21" parent="Box21" instance=ExtResource("1_tsbrl")]
+position = Vector2(1040, -267)
+
+[node name="Box22" parent="Box21" instance=ExtResource("1_tsbrl")]
+position = Vector2(-2, 152)
+
+[node name="Box23" parent="Box21" instance=ExtResource("1_tsbrl")]
+position = Vector2(-154, -2)
+
+[node name="Box35" parent="Box21" instance=ExtResource("1_tsbrl")]
+position = Vector2(1794, 195)
+
+[node name="Box36" parent="Box21" instance=ExtResource("1_tsbrl")]
+position = Vector2(1796, 351)
+
+[node name="Box37" parent="Box21" instance=ExtResource("1_tsbrl")]
+position = Vector2(1797, 508)
+
+[node name="Box39" parent="Box21" instance=ExtResource("1_tsbrl")]
+position = Vector2(1790, -421)
+
+[node name="Box40" parent="Box21" instance=ExtResource("1_tsbrl")]
+position = Vector2(1791, -110)
+
+[node name="Box41" parent="Box21" instance=ExtResource("1_tsbrl")]
+position = Vector2(1792, -734)
+
+[node name="Box42" parent="Box21" instance=ExtResource("1_tsbrl")]
+position = Vector2(1791, -577)
+
+[node name="Box43" parent="Box21" instance=ExtResource("1_tsbrl")]
+position = Vector2(1792, 44)
+
+[node name="Box44" parent="Box21" instance=ExtResource("1_tsbrl")]
+position = Vector2(1792, -890)
+
+[node name="Box45" parent="Box21" instance=ExtResource("1_tsbrl")]
+position = Vector2(1790, -266)
+
+[node name="Box46" parent="Box21" instance=ExtResource("1_tsbrl")]
+position = Vector2(1795, -1050)
+
+[node name="Box38" parent="Box21" instance=ExtResource("1_tsbrl")]
+position = Vector2(-1062, -1213)
+
+[node name="Box47" parent="Box21" instance=ExtResource("1_tsbrl")]
+position = Vector2(-911, -1212)
+
+[node name="Box48" parent="Box21" instance=ExtResource("1_tsbrl")]
+position = Vector2(-760, -1212)
+
+[node name="Box49" parent="Box21" instance=ExtResource("1_tsbrl")]
+position = Vector2(436, -1211)
+
+[node name="Box50" parent="Box21" instance=ExtResource("1_tsbrl")]
+position = Vector2(286, -1211)
+
+[node name="Box51" parent="Box21" instance=ExtResource("1_tsbrl")]
+position = Vector2(137, -1211)
+
+[node name="Box52" parent="Box21" instance=ExtResource("1_tsbrl")]
+position = Vector2(-13, -1211)
+
+[node name="Box53" parent="Box21" instance=ExtResource("1_tsbrl")]
+position = Vector2(-162, -1211)
+
+[node name="Box54" parent="Box21" instance=ExtResource("1_tsbrl")]
+position = Vector2(-312, -1211)
+
+[node name="Box55" parent="Box21" instance=ExtResource("1_tsbrl")]
+position = Vector2(-461, -1212)
+
+[node name="Box56" parent="Box21" instance=ExtResource("1_tsbrl")]
+position = Vector2(-611, -1212)
+
+[node name="Box57" parent="Box21" instance=ExtResource("1_tsbrl")]
+position = Vector2(1793, -1207)
+
+[node name="Box58" parent="Box21" instance=ExtResource("1_tsbrl")]
+position = Vector2(1641, -1208)
+
+[node name="Box59" parent="Box21" instance=ExtResource("1_tsbrl")]
+position = Vector2(1490, -1209)
+
+[node name="Box60" parent="Box21" instance=ExtResource("1_tsbrl")]
+position = Vector2(1341, -1209)
+
+[node name="Box61" parent="Box21" instance=ExtResource("1_tsbrl")]
+position = Vector2(1192, -1209)
+
+[node name="Box62" parent="Box21" instance=ExtResource("1_tsbrl")]
+position = Vector2(1040, -1210)
+
+[node name="Box63" parent="Box21" instance=ExtResource("1_tsbrl")]
+position = Vector2(888, -1210)
+
+[node name="Box64" parent="Box21" instance=ExtResource("1_tsbrl")]
+position = Vector2(736, -1210)
+
+[node name="Box65" parent="Box21" instance=ExtResource("1_tsbrl")]
+position = Vector2(586, -1211)
+
+[node name="Box66" parent="Box21" instance=ExtResource("1_tsbrl")]
+position = Vector2(-1059, 664)
+
+[node name="Box67" parent="Box21" instance=ExtResource("1_tsbrl")]
+position = Vector2(-902, 665)
+
+[node name="Box68" parent="Box21" instance=ExtResource("1_tsbrl")]
+position = Vector2(-750, 665)
+
+[node name="Box69" parent="Box21" instance=ExtResource("1_tsbrl")]
+position = Vector2(447, 666)
+
+[node name="Box70" parent="Box21" instance=ExtResource("1_tsbrl")]
+position = Vector2(297, 666)
+
+[node name="Box71" parent="Box21" instance=ExtResource("1_tsbrl")]
+position = Vector2(148, 666)
+
+[node name="Box72" parent="Box21" instance=ExtResource("1_tsbrl")]
+position = Vector2(-2, 666)
+
+[node name="Box73" parent="Box21" instance=ExtResource("1_tsbrl")]
+position = Vector2(-151, 666)
+
+[node name="Box74" parent="Box21" instance=ExtResource("1_tsbrl")]
+position = Vector2(-301, 666)
+
+[node name="Box75" parent="Box21" instance=ExtResource("1_tsbrl")]
+position = Vector2(-450, 665)
+
+[node name="Box76" parent="Box21" instance=ExtResource("1_tsbrl")]
+position = Vector2(-600, 665)
+
+[node name="Box77" parent="Box21" instance=ExtResource("1_tsbrl")]
+position = Vector2(1804, 670)
+
+[node name="Box78" parent="Box21" instance=ExtResource("1_tsbrl")]
+position = Vector2(1652, 669)
+
+[node name="Box79" parent="Box21" instance=ExtResource("1_tsbrl")]
+position = Vector2(1501, 668)
+
+[node name="Box80" parent="Box21" instance=ExtResource("1_tsbrl")]
+position = Vector2(1352, 668)
+
+[node name="Box81" parent="Box21" instance=ExtResource("1_tsbrl")]
+position = Vector2(1203, 668)
+
+[node name="Box82" parent="Box21" instance=ExtResource("1_tsbrl")]
+position = Vector2(1051, 667)
+
+[node name="Box83" parent="Box21" instance=ExtResource("1_tsbrl")]
+position = Vector2(899, 667)
+
+[node name="Box84" parent="Box21" instance=ExtResource("1_tsbrl")]
+position = Vector2(747, 667)
+
+[node name="Box85" parent="Box21" instance=ExtResource("1_tsbrl")]
+position = Vector2(597, 666)
+
+[node name="Box86" parent="Box21" instance=ExtResource("1_tsbrl")]
+position = Vector2(-1064, 192)
+
+[node name="Box87" parent="Box21" instance=ExtResource("1_tsbrl")]
+position = Vector2(-1063, 348)
+
+[node name="Box88" parent="Box21" instance=ExtResource("1_tsbrl")]
+position = Vector2(-1061, 505)
+
+[node name="Box89" parent="Box21" instance=ExtResource("1_tsbrl")]
+position = Vector2(-1067, -424)
+
+[node name="Box90" parent="Box21" instance=ExtResource("1_tsbrl")]
+position = Vector2(-1066, -113)
+
+[node name="Box91" parent="Box21" instance=ExtResource("1_tsbrl")]
+position = Vector2(-1065, -737)
+
+[node name="Box92" parent="Box21" instance=ExtResource("1_tsbrl")]
+position = Vector2(-1066, -580)
+
+[node name="Box93" parent="Box21" instance=ExtResource("1_tsbrl")]
+position = Vector2(-1065, 41)
+
+[node name="Box94" parent="Box21" instance=ExtResource("1_tsbrl")]
+position = Vector2(-1065, -893)
+
+[node name="Box95" parent="Box21" instance=ExtResource("1_tsbrl")]
+position = Vector2(-1067, -269)
+
+[node name="Box96" parent="Box21" instance=ExtResource("1_tsbrl")]
+position = Vector2(-1062, -1053)
+
+[node name="Box97" parent="Box21" instance=ExtResource("1_tsbrl")]
+position = Vector2(-319, -429)
+
+[node name="Box98" parent="Box21" instance=ExtResource("1_tsbrl")]
+position = Vector2(-317, -742)
+
+[node name="Box99" parent="Box21" instance=ExtResource("1_tsbrl")]
+position = Vector2(-318, -585)
+
+[node name="Box100" parent="Box21" instance=ExtResource("1_tsbrl")]
+position = Vector2(-317, -898)
+
+[node name="Box101" parent="Box21" instance=ExtResource("1_tsbrl")]
+position = Vector2(-319, -274)
+
+[node name="Box102" parent="Box21" instance=ExtResource("1_tsbrl")]
+position = Vector2(-314, -1058)
+
+[node name="Box103" parent="Box21" instance=ExtResource("1_tsbrl")]
+position = Vector2(-910, -3)
+
+[node name="Box104" parent="Box21" instance=ExtResource("1_tsbrl")]
+position = Vector2(-758, -3)
+
+[node name="Box105" parent="Box21" instance=ExtResource("1_tsbrl")]
+position = Vector2(-309, -2)
+
+[node name="Box106" parent="Box21" instance=ExtResource("1_tsbrl")]
+position = Vector2(-458, -3)
+
+[node name="Box107" parent="Box21" instance=ExtResource("1_tsbrl")]
+position = Vector2(-608, -3)
+
+[node name="Box108" parent="Box21" instance=ExtResource("1_tsbrl")]
+position = Vector2(-763, -735)
+
+[node name="Box109" parent="Box21" instance=ExtResource("1_tsbrl")]
+position = Vector2(-912, -736)
+
+[node name="Box110" parent="Box21" instance=ExtResource("1_tsbrl")]
+position = Vector2(-166, -271)
+
+[node name="Box111" parent="Box21" instance=ExtResource("1_tsbrl")]
+position = Vector2(739, -269)
+
+[node name="Box112" parent="Box21" instance=ExtResource("1_tsbrl")]
+position = Vector2(590, -269)
+
+[node name="Box113" parent="Box21" instance=ExtResource("1_tsbrl")]
+position = Vector2(438, -270)
+
+[node name="Box114" parent="Box21" instance=ExtResource("1_tsbrl")]
+position = Vector2(286, -270)
+
+[node name="Box115" parent="Box21" instance=ExtResource("1_tsbrl")]
+position = Vector2(134, -270)
+
+[node name="Box116" parent="Box21" instance=ExtResource("1_tsbrl")]
+position = Vector2(-16, -271)
+
+[node name="Box117" parent="Box21" instance=ExtResource("1_tsbrl")]
+position = Vector2(899, 349)
+
+[node name="Box118" parent="Box21" instance=ExtResource("1_tsbrl")]
+position = Vector2(895, -267)
+
+[node name="Box119" parent="Box21" instance=ExtResource("1_tsbrl")]
+position = Vector2(896, 44)
+
+[node name="Box120" parent="Box21" instance=ExtResource("1_tsbrl")]
+position = Vector2(897, 198)
+
+[node name="Box121" parent="Box21" instance=ExtResource("1_tsbrl")]
+position = Vector2(895, -112)
+
+[node name="Box122" parent="Box21" instance=ExtResource("1_tsbrl")]
+position = Vector2(1638, -733)
+
+[node name="Box123" parent="Box21" instance=ExtResource("1_tsbrl")]
+position = Vector2(1486, -734)
+
+[node name="Box124" parent="Box21" instance=ExtResource("1_tsbrl")]
+position = Vector2(1334, -734)
+
+[node name="Box125" parent="Box21" instance=ExtResource("1_tsbrl")]
+position = Vector2(1182, -734)
+
+[node name="Box126" parent="Box21" instance=ExtResource("1_tsbrl")]
+position = Vector2(1032, -735)
+
+[node name="HUD" type="CanvasLayer" parent="."]
+
+[node name="MarginContainer" type="MarginContainer" parent="HUD"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 30
+theme_override_constants/margin_top = 30
+theme_override_constants/margin_right = 30
+theme_override_constants/margin_bottom = 30
+
+[node name="ScoreLabel" type="Label" parent="HUD/MarginContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 0
+theme_override_font_sizes/font_size = 25
+text = "Score: 0"
+
+[node name="EnemyLabel" type="Label" parent="HUD/MarginContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 8
+theme_override_font_sizes/font_size = 25
+text = "Inimigos Eliminados: 0/8"
+
+[node name="PlayerLife" type="ProgressBar" parent="HUD/MarginContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(500, 40)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_constants/outline_size = 2
+theme_override_styles/background = SubResource("StyleBoxFlat_n304t")
+theme_override_styles/fill = SubResource("StyleBoxFlat_3bs6i")
+step = 25.0
+value = 100.0
+
+[node name="Enemy9" parent="." instance=ExtResource("3_2wjus")]
+position = Vector2(1797, -239)
+rotation = 2.6913
